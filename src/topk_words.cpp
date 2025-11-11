@@ -31,6 +31,7 @@ int main(int argc, char *argv[]) {
     Counter freq_dict;
     for (int i = 1; i < argc; ++i) {
         std::ifstream input{argv[i]};
+        std::cout << "Processing file: " << argv[i] << '\n';
         if (!input.is_open()) {
             std::cerr << "Failed to open file " << argv[i] << '\n';
             return EXIT_FAILURE;
