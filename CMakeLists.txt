@@ -4,6 +4,7 @@ project(topk_words)
 
 set(PROJECT_SOURCE
     src/topk_words.cpp
+    src/functions.cpp
 )
 
 set(PROJECT_INCLUDES
