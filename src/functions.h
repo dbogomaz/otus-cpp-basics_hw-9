@@ -14,6 +14,7 @@ void count_words(std::istream& stream, Counter&); // Подсчет слов в 
 void print_topk(std::ostream& stream, const Counter&, const size_t k); // Вывод топ k слов
 
 void process_origin(int argc, char *argv[]); // оригинальная реализация от OTUS
-void process_v1(int argc, char *argv[]);
+void process_v1(int argc, char *argv[]); // Каждая книга в отдельном потоке. Словарь общий
+void process_v2(int argc, char *argv[]); // Каждая книга в отдельном потоке. Словарь у каждого потока свой. Потом словари объединяются
 
 #endif // FUNCTIONS_H

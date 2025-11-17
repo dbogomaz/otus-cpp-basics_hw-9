@@ -11,6 +11,7 @@ int main(int argc, char *argv[]) {
 
     process_origin(argc, argv);
     process_v1(argc, argv);
+    process_v2(argc, argv);
 
 }
 
