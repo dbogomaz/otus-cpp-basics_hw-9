@@ -13,7 +13,6 @@
 // ----------------------------------------------------------
 static std::vector<std::string> get_books_list() {
     std::vector<std::string> books;
-    size_t booksNumber = 0;
     for (const auto& entry : std::filesystem::directory_iterator("books")) {
         books.emplace_back(entry.path().string());
     }
